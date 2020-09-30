@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Service History</title>
+	<link href = "style.css" rel = "stylesheet" type = "text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!------ Include the above in your HEAD tag ---------->
+	
+	<script>
+	
+	     $(document).ready(function(){
+      var i=3;
+     $("#add_row").click(function(){
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text' placeholder='eg.2nd' class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='date'  class='form-control input-md'></td><td><input  name='mobile"+i+"' type='date' placeholder='eg.2010'  class='form-control input-md'></td>");
+
+      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row").click(function(){
+    	 if(i>3){
+		 $("#addr"+(i-1)).html('');
+		 i--;
+		 }
+	 });
+
+});	
+	</script>
+	
+	
+	<script>
+	
+		$(document).ready(function(){
+      var i=3;
+     $("#add_row1").click(function(){
+      $('#addrr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='date' placeholder='eg.60'  class='form-control input-md'></td><td><input  name='mobile"+i+"' type='date' placeholder='eg.2010'  class='form-control input-md'></td>");
+
+      $('#tab_logic1').append('<tr id="addrr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row1").click(function(){
+    	 if(i>3){
+		 $("#addrr"+(i-1)).html('');
+		 i--;
+		 }
+	 });
+
+});
+	</script>
+	
+	
+<script>
+	
+		$(document).ready(function(){
+      var i=2;
+     $("#add_row2").click(function(){
+      $('#addrrr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text'  class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='date' placeholder='eg.60'  class='form-control input-md'></td><td><input  name='mobile"+i+"' type='date' placeholder='eg.2010'  class='form-control input-md'></td>");
+
+      $('#tab_logic2').append('<tr id="addrrr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row2").click(function(){
+    	 if(i>2){
+		 $("#addrrr"+(i-1)).html('');
+		 i--;
+		 }
+	 });
+
+});
+</script>
+	
+			<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	
+	
+	</head>
+	</body>
+	
+	<div id="container">
+		<div class="panel panel-info">
+			
+			<div class="banner ">
+				<img src="logo3.jpg"  class="img-responsive">
+			</div>
+		
+			</div>
+	</div>
+	<div class="topnav" id="myTopnav">
+		  <a href="postapplied.html"style="font-size:14px;">Post Applied</a>
+		  <a href="Personaldetail.html"style="font-size:14px;">Personal Details</a>
+		  <a href="language.html"style="font-size:14px;">Language</a>
+		  <a href="Acadamicdetail.html"style="font-size:14px;" >Acadamic Details</a>
+		  <a href="serviceshistory.html"style="font-size:14px;">Service History</a>
+		  
+		   <a href="administrative-duties.html"style="font-size:14px;">Administrative Duties</a>
+		   <a href="researchsupervision.html"style="font-size:14px;">Research suprvision</a>
+		  <a href="researchpublication.html"style="font-size:14px;">Research Publication</a>
+		  <a href="research-publication-continue.html"style="font-size:14px;">Research Publication Cont</a>
+		  
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<br>
+	
+	
+	<div class="container">
+		<div class="row clearfix">
+		
+			
+			<div class="col-md-12 ">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<a><span class="glyphicon glyphicon-book"></span></a><a style="font-size:18px">&nbsp; SERVICE HISTORY (Starting from present position) </a>
+					</div>		
+				</div>
+				<div class="well well-sm">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <p style="font-size:18px">&nbsp; i) Post-PhD Teaching/Research Experience  </p>
+					</div>		
+				</div>
+					<table class="table table-bordered table-hover table-responsive" id="tab_logic">
+						<thead>
+							<tr >
+								<th class="text-center">
+									#
+								</th>
+								<th  class="text-center">
+									Post Graduate Institution(s)/University 
+								</th>
+								<th class="text-center">
+									Position held 
+								</th>
+								
+								<th colspan="2" class="text-center">
+									Period
+								</th>
+
+								
+								
+								
+								
+						</thead>
+						<thead>
+							<tr >
+								<th></th>
+								<th colspan="2"></th>
+								
+								<th class="text-center">
+									From
+								</th>
+								
+								<th class="text-center">
+									TO
+								</th>
+
+								
+								
+								
+								
+						</thead>
+						<tbody>
+							<tr id='addr0'>
+								<td>
+								1
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								
+								
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addr1'>
+								<td>
+								2
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addr1'>
+								<td>
+								3
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							
+							
+							<tr id='addr3'></tr>
+						</tbody>
+					</table>
+				</div>
+				<a id="add_row" class="btn btn-primary pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-danger">Delete Row</a>
+				<br><br><br>
+				
+				
+				<div class="well well-sm"
+					<form class="form-horizontal">
+				
+						<div class="form-group row">
+						
+							<label class="col-md-2 control-label">Total Post-PhD Experience</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							
+							<label class="col-md-1 control-label">Years</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							
+							<label class="col-md-1 control-label">Months</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							<label class="col-md-1 control-label">Days</label>
+							<div class="col-md-1">
+								<input type="text" class="form-control"  />
+							</div>
+						
+						</div>
+				
+					</form>
+				</div>
+				
+				<hr id="hr1">
+				
+				<div class="well well-sm">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							 <p style="font-size:18px">&nbsp; ii) Pre-PhD Teaching/Research Experience </p>
+						</div>		
+					</div>
+					<table class="table table-bordered table-hover table-responsive" id="tab_logic1">
+						<thead>
+							<tr >
+								<th class="text-center">
+									#
+								</th>
+								<th  class="text-center">
+									Post Graduate Institution(s)/University 
+								</th>
+								<th class="text-center">
+									Position held 
+								</th>
+								
+								<th colspan="2" class="text-center">
+									Period
+								</th>
+
+								
+								
+								
+								
+						</thead>
+						<thead>
+							<tr >
+								
+								<th colspan="3"></th>
+								
+								<th class="text-center">
+									From
+								</th>
+								
+								<th class="text-center">
+									TO
+								</th>
+
+								
+								
+								
+								
+						</thead>
+						<tbody>
+							<tr id='addrr0'>
+								<td>
+								1
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								
+								
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addrr1'>
+								<td>
+								2
+								</td>
+								<td>
+								<input type="text"  class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addrr1'>
+								<td>
+								3
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							
+							
+							<tr id='addrr3'></tr>
+						</tbody>
+				</table>
+				</div>
+				
+				<a id="add_row1" class="btn btn-primary pull-left">Add Row</a><a id='delete_row1' class="pull-right btn btn-danger">Delete Row</a>
+			
+				<br><br><br>
+				<div class="well well-sm"
+					<form class="form-horizontal">
+				
+						<div class="form-group row">
+						
+							<label class="col-md-2 control-label">Total Pre-PhD Experience</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							
+							<label class="col-md-1 control-label">Years</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							
+							<label class="col-md-1 control-label">Months</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control"  />
+							</div>
+							<label class="col-md-1 control-label">Days</label>
+							<div class="col-md-1">
+								<input type="text" class="form-control"  />
+							</div>
+						
+						</div>
+				
+					</form>
+				</div>	
+				<hr id="hr1">
+				
+				<div class="well well-sm">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<p style="font-size:18px">&nbsp; iii) Postdoctoral fellowships: (Duration)  </p>
+						</div>		
+					</div>
+					
+					
+					<table class="table table-bordered table-hover table-responsive" id="tab_logic2">
+						<thead>
+							<tr >
+								<th class="text-center">
+									#
+								</th>
+								<th  class="text-center">
+									Institution
+								</th>
+								<th class="text-center">
+									Position held 
+								</th>
+								<th class="text-center">
+									Nature of Fellowship/Work 
+								</th>
+								<th colspan="2" class="text-center">
+									Period
+								</th>
+								
+
+								
+								
+								
+								
+						</thead>
+						<thead>
+							<tr >
+								<th></th>
+								<th colspan="3"></th>
+								
+								<th class="text-center">
+									From
+								</th>
+								
+								<th class="text-center">
+									TO
+								</th>
+
+								
+								
+								
+								
+						</thead>
+						<tbody>
+							<tr id='addrr0'>
+								<td>
+								1
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								
+								
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addrr1'>
+								<td>
+								2
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addrr1'>
+								<td>
+								3
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"   class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  class="form-control"/>
+								</td>
+								<td>
+								<input type="date"   class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							
+							
+							<tr id='addrr2'></tr>
+						</tbody>
+					</table>
+					<a id="add_row2" class="btn btn-primary pull-left">Add Row</a><a id='delete_row2' class="pull-right btn btn-danger">Delete Row</a>
+					
+				</div>
+				
+				
+				
+			</div>
+			
+		</div>
+		<br><br>
+		<a href="Acadamicdetail.html"><div class="btn btn-info"style="width:80px">Previous</div></a>
+		<a href="administrative-duties.html"<div class="btn btn-info pull-right"style="width:80px">Next</div></a>
+	</div>
+	
+	<br><br><br>
+		<footer class="navbar navbar-default ">
+			<p class = "navbar-text pull-right">Copyright&nbsp;2018&nbsp;© International Islamic University Islamabad,pakistan</p>
+			
+		</footer>
+</body>
+</html>

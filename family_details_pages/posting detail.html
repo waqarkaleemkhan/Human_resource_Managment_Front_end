@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Posting Detail</title>
+	<link href = "style.css" rel = "stylesheet" type = "text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!------ Include the above in your HEAD tag ---------->
+	
+	<script>
+	
+	     $(document).ready(function(){
+      var i=3;
+     $("#add_row").click(function(){
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='eg.144' class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text' placeholder='Managment' class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text' placeholder='YES/NO' class='form-control input-md'  /> </td><td><input name='name"+i+"' type='text' placeholder='eg.127' class='form-control input-md'  /> </td><td><input name='name"+i+"' type='date' placeholder='eg.2nd' class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='date' placeholder='eg.60'  class='form-control input-md'></td>");
+
+      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row").click(function(){
+    	 if(i>3){
+		 $("#addr"+(i-1)).html('');
+		 i--;
+		 }
+	 });
+
+});
+	
+	</script>
+	
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	</head>
+	</body>
+	
+	<div id="container">
+		<div class="panel panel-info">
+			
+			<div class="banner ">
+				<img src="logo3.jpg"  class="img-responsive">
+			</div>
+		
+			</div>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		  <a href="genralinfo.html"style="font-size:14px;">Genral Info</a>
+		  <a href="posting detail.html"style="font-size:14px;">Posting Detail</a>
+		  <a href="family.html"style="font-size:14px;">Family</a>
+		  <a href="education.html"style="font-size:14px;">Education</a>
+		  <a href="servicehistory.html"style="font-size:14px;">Service History</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<br>
+	<div class="container">
+		
+		<div class="row clearfix">
+		
+			
+			
+			<div class="col-md-12 column">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<a><span class="glyphicon glyphicon-book"></span></a><a style="font-size:18px">&nbsp; Posting Detail</a>
+					</div>		
+				</div>
+				<div class="well well-sm">	
+					<table class="table table-bordered table-hover table-responsive" id="tab_logic">
+						<thead>
+							<tr >
+								<th class="text-center">
+									#
+								</th>
+								<th class="text-center">
+									Posting Code
+								</th>
+								<th class="text-center">
+									Department
+								</th>
+								<th class="text-center">
+									Curent status
+								</th>
+
+								<th class="text-center">
+									Reporting Officer
+								</th>
+								
+								<th class="text-center">
+									From Date
+								</th>
+								
+								<th class="text-center">
+									To Date
+								</th>
+								
+								
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr id='addr0'>
+								<td>
+								1
+								</td>
+								<td>
+								<input type="number"  placeholder='eg.144' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='Managment' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='YES/NO' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='eg.127' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='' class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addr1'>
+								<td>
+								2
+								</td>
+								<td>
+								<input type="number"  placeholder='eg.144' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='Managment' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='YES/NO' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='eg.127' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='eg.Ist' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='eg.75' class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							<tr id='addr1'>
+								<td>
+								3
+								</td>
+								<td>
+								<input type="number"  placeholder='eg.144' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='Managment' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='YES/NO' class="form-control"/>
+								</td>
+								<td>
+								<input type="text"  placeholder='eg.127' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='' class="form-control"/>
+								</td>
+								<td>
+								<input type="date"  placeholder='' class="form-control"/>
+								</td>
+								
+								
+								
+								
+							</tr>
+							
+							
+							
+							<tr id='addr3'></tr>
+						</tbody>
+					</table>
+				</div>
+				<a id="add_row" class="btn btn-primary pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-danger">Delete Row</a>
+			</div>
+		</div>
+		<br><br>
+		<a href="genralinfo.html"><div class="btn btn-info"style="width:80px">Previous</div></a>
+		<a href="family.html"<div class="btn btn-info pull-right"style="width:80px">Next</div></a>
+	</div>
+	<br><br><br>
+		<footer class="navbar navbar-default ">
+			<p class = "navbar-text pull-right">Copyright&nbsp;2018&nbsp;© International Islamic University Islamabad,pakistan</p>
+			
+		</footer>
+	</body>
+</html>

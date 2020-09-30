@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Education</title>
+		<link href = "style.css" rel = "stylesheet" type = "text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<script>
+		
+		
+			$(document).ready(function () {
+    //@naresh action dynamic childs
+    var next = 0;
+    $("#add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = ' <div id="field'+ next +'" name="field'+ next +'"><!-- Text input--><div class="form-group"> <label class="col-md-2 control-label" for="fname_id">Education Code</label> <div class="col-md-4"> <input id="action_id"  type="text" placeholder="" class="form-control input-md"> </div><label class="col-md-2 control-label" for="lname_id">Education Type</label> <div class="col-md-4"> <input id="action_id"  type="text" placeholder="" class="form-control input-md"> </div></div><br><br><br><!-- Text input--><div class="form-group"> <label class="col-md-2 control-label" for="dob_id">Degree Name</label> <div class="col-md-4"> <input id="action_name"  type="text" placeholder="" class="form-control input-md"> </div><label class="col-md-2 control-label" for="cnic_id">Board/University</label><div class="col-md-4"> <input id="action_json"  type="text" class="form-control input-md"> </div></div><br><br><!-- File Button --><div class="form-group"> <label class="col-md-2 control-label" for="fname_id">Institution Name</label> <div class="col-md-4"> <input id="mstatus_id"  type="text" placeholder="" class="form-control input-md"> </div><label class="col-md-2 control-label" for="fname_id">HEC/Govt Recog</label><div class="col-md-4"> <input id="occupation_id"  type="text" placeholder="" class="form-control input-md"> </div></div><br><br> <div class="form-group"> <label class="col-md-2 control-label" for="fname_id">Group</label> <div class="col-md-4"> <input id="family_id"  type="text" placeholder="" class="form-control input-md"> </div> <label class="col-md-2 control-label" for="fname_id">Major Subject</label><div class="col-md-4"> <input id="dep_id"  type="text" placeholder="" class="form-control input-md"> </div></div><br><br><div class="form-group"> <label class="col-md-2 control-label" for="fname_id">Division/CGPA</label> <div class="col-md-4"> <input id="rel_id"  type="text" placeholder="" class="form-control input-md"> </div> <label class="col-md-2 control-label" for="fname_id">Date of Passing</label><div class="col-md-4"> <input id="gender_id"  type="date" placeholder="" class="form-control input-md"> </div></div><br><br><div class="form-group"> <label class="col-md-2 control-label" for="fname_id">Degree Evaluation Place</label> <div class="col-md-4"> <input id="livewith_id"  type="text" placeholder="" class="form-control input-md"> </div></div></div>';
+        var newInput = $(newIn);
+        var removeBtn = '<br><br><div class="col-md-5"></div><button id="remove' + (next - 1) + '" class="btn btn-danger remove-me " >Remove</button></div></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+
+});
+		
+		
+</script>
+	
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>	
+	
+		
+</head>
+	
+	<body>
+	
+		<div id="container">
+			<div class="panel panel-info" >
+				<img src="logo3.jpg"   class="img-responsive">
+			</div>
+		
+		</div>
+		<div class="topnav" id="myTopnav">
+		  <a href="genralinfo.html"style="font-size:14px;">Genral Info</a>
+		  <a href="posting detail.html"style="font-size:14px;">Posting Detail</a>
+		  <a href="family.html"style="font-size:14px;">Family</a>
+		  <a href="education.html"style="font-size:14px;">Education</a>
+		  <a href="servicehistory.html"style="font-size:14px;">Service History</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<br>
+		
+		<div class="container-fluid">
+			<div class="panel panel-info">
+			<div class="panel-heading">
+				<a><span class="glyphicon glyphicon-book"></span></a><a style="font-size:18px">&nbsp; Education Details </a>
+			</div>
+		</div>
+		</div>
+		
+		<div class="container well">
+							
+							<div class="md-col-5"></div>
+							<div class="panel-heading"><h3>Education Detail</h3></div>
+									<div class="col-md-12">
+										<div class="col-md-10" >
+											
+											<div id="field">
+												<div id="field0">
+												
+
+												<form>
+													<div class="form-group">
+													  <label class="col-md-2 control-label" for="action_id">Education Code</label>  
+													  <div class="col-md-4">
+													  <input id="fname_id" type="text" placeholder="" class="form-control input-md">
+														
+													  </div>
+													  <label class="col-md-2 control-label" for="action_name">Education Type</label>  
+													  <div class="col-md-4">
+													  <input id="lname_id"  type="text" placeholder="Degree/Certificate" class="form-control input-md">
+														
+													  </div>
+													</div>
+													<br><br><br>
+
+													
+													<div class="form-group">
+													  <label class="col-md-2 control-label" for="action_json">Degree Name</label>
+													  <div class="col-md-4">
+														<input type="text" id="dob_id" placeholder="MS/Mphil"  class="form-control input-md" >
+													  </div>
+													  <label class="col-md-2 control-label" for="action_id">Board/University</label>  
+													  <div class="col-md-4">
+													  <input id="cnic_id" type="text" placeholder="International Islamic University" class="form-control input-md">
+													  </div>
+													</div>
+													<br><br>
+													
+													<div class="form-group">
+													  <label class="col-md-2 control-label" for="action_id">Institution Name</label>  
+													  <div class="col-md-4">
+													  <input id="mstatus_id" type="text" placeholder="IIUI" class="form-control input-md">
+													  </div>
+													   <label class="col-md-2 control-label" for="action_id">HEC/Govt Recog</label>  
+													  <div class="col-md-4">
+													  <input id="occupation_id" type="text" placeholder="YES/NO" class="form-control input-md">
+													  </div>
+													</div>
+													<br><br>
+													
+													<div class="form-group">
+													  <label class="col-md-2 control-label" for="action_id">Group</label>  
+													  <div class="col-md-4">
+													  <input id="family_id" type="text" placeholder="Human Resource" class="form-control input-md">
+													  </div>
+													  <label class="col-md-2 control-label" for="action_id">Major Subject</label>  
+													  <div class="col-md-4">
+													  <input id="dep_id" type="text" placeholder="Islmyiat" class="form-control input-md">													
+													  </div>
+													</div>
+													<br><br>
+													
+													
+													<div class="form-group">
+													  
+													   <label class="col-md-2 control-label" for="action_id">Division/CGPA</label>  
+													  <div class="col-md-4">
+													  <input id="rel_id" type="text" placeholder="1st/4.0" class="form-control input-md">						
+													  </div>
+													  <label class="col-md-2 control-label" for="action_id">Date of Passing</label>  
+													  <div class="col-md-4">
+													  <input id="gender_id" type="date" placeholder="" class="form-control input-md">											
+													  </div>
+													</div>
+													<br><br>
+													
+													<div class="form-group">
+													  
+													   <label class="col-md-2 control-label" for="action_id">Degree Evaluation place</label>  
+													  <div class="col-md-4">
+													  <input id="livewith_id" type="text" placeholder="legal intrpretor" class="form-control input-md">										
+													  </div>
+													 
+													</div>
+													<br><br>
+													
+													
+													
+												</form>
+											</div>	
+											<br><br>
+											<div class="form-group">
+												<div class="col-md-5"></div>
+												
+												  <div class="col-md-4">
+													<button id="add-more" name="add-more" class="btn btn-primary ">Add More</button>
+												  </div>
+											</div>
+												<br><br>
+												
+											
+												
+											</div>
+											<br><br>
+												
+												
+										  
+										</div>
+									</div>
+									<hr id="hr1">
+								<a href="family.html"><div class="btn btn-info"style="width:80px">Previous</div></a>
+							<a href="servicehistory.html"<div class="btn btn-info pull-right"style="width:80px">Next</div></a>
+							</div>
+							<br><br><br>
+		<footer class="navbar navbar-default ">
+			<p class = "navbar-text pull-right">Copyright&nbsp;2018&nbsp;© International Islamic University Islamabad,pakistan</p>
+			
+		</footer>
+							
+	</body>
+</html>

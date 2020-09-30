@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<title>Personal Details</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href = "style.css" rel = "stylesheet" type = "text/css"/>
+		<script src="jquery.js"></script>
+		<script src="/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+				<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+		
+	</head>
+	
+	<body>
+		<div id="container">
+		<div class="panel panel-info">
+			
+			<div class="banner ">
+				<img src="logo3.jpg"  class="img-responsive">
+			</div>
+		
+			</div>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		  <a href="postapplied.html"style="font-size:14px;">Post Applied</a>
+		  <a href="Personaldetail.html"style="font-size:14px;">Personal Details</a>
+		  <a href="language.html"style="font-size:14px;">Language</a>
+		  <a href="Acadamicdetail.html"style="font-size:14px;" >Acadamic Details</a>
+		  <a href="serviceshistory.html"style="font-size:14px;">Service History</a>
+		  
+		   <a href="administrative-duties.html"style="font-size:14px;">Administrative Duties</a>
+		   <a href="researchsupervision.html"style="font-size:14px;">Research suprvision</a>
+		  <a href="researchpublication.html"style="font-size:14px;">Research Publication</a>
+		  <a href="research-publication-continue.html"style="font-size:14px;">Research Publication Cont</a>
+		  
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<br>
+	
+		<div class="container-fluid">
+			<div class="col-md-12">
+				<div class="row">
+						
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<a><span class="glyphicon glyphicon-book"></span></a><a style="font-size:18px">&nbsp; Personal Details</a>
+						</div>
+								
+					</div>
+					<div class="well well-sm">
+						<form class="form-horizontal">
+							<div class="form-group row">
+							
+								<label class="col-md-2 control-label">Name *</label>
+								<div class="col-md-3">
+									<input type="text" class="form-control" placeholder="Full Name" required />
+								</div>
+								
+								<label class="col-md-2 control-label">F.Name *</label>
+								<div class="col-md-3">
+									<input type="text" class="form-control" placeholder="Father Name" required />
+								</div> 
+							</div>
+							
+							<div class="form-group row">
+								<label class="col-md-2 control-label">Date of Birth *</label>
+								<div class="col-md-3">
+									<input type="date" class="form-control" placeholder="Date of Birth" required />
+								</div>
+								
+								<label class="col-md-2 control-label">Relgion</label>
+								<div class="col-md-3">
+									<select class="form-control" name="religion">
+									<option value="na" selected="">--Select Relgion</option>
+									<option value="islam">Islam</option>
+									<option value="Hindu">Hindu</option>
+									<option value="Christhan">Christhan</option>
+									<option value="Jew">Jew</option>
+									<option value="Other">Other</option>
+									</select>
+									
+								</div>
+								
+							</div>
+							
+							
+							
+							<div class="form-group row">
+							
+								<label class="col-md-2 control-label">Domicile</label>
+								<div class="col-md-3">
+									<select class="form-control" name="religion">
+									<option value="na" selected="">--Select Domicile</option>
+									<option value="domicile">KPK</option>
+									<option value="domicile1">Punjab</option>
+									<option value="domicile2">Sindh</option>
+									<option value="domicile3">Azad Kashir</option>
+									<option value="domicile4">Balochistan</option>
+									<option value="domicile4">Gilgit Baldistan</option>
+									<option value="Other">Other</option>
+									</select>
+									
+								</div>
+								
+								<label class="col-md-2 control-label">CNIC *</label>
+								<div class="col-md-3">
+									<input type="number" class="form-control" placeholder="CNIC eg.1234567890" required />
+								</div>
+							
+							</div>
+							
+							<div class="form-group row">
+							
+								<label class="col-md-2 control-label">Email *</label>
+								<div class="col-md-3">
+									<input type="email" class="form-control" placeholder="email eg.khan@gmail.com" required />
+								</div>
+								
+								<label class="col-md-2 control-label">Telephone (Res) *</label>
+								<div class="col-md-3">
+									<input type="number" class="form-control" placeholder="eg .051811111" required />
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label class="col-md-2 control-label">Postal Add *</label>
+								<div class="col-md-10">
+									<textarea id="address" class="form-control" ></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label class="col-md-2 control-label">Permanent Add *</label>
+								<div class="col-md-10">
+									<textarea id="address" class="form-control" required ></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group row">
+							
+								<label class="col-md-2 control-label">Cell *</label>
+								<div class="col-md-2">
+									<input type="number" class="form-control" placeholder="eg.123456789" required />
+								</div>
+								
+								<label class="col-md-2 control-label">Age *</label>
+								<div class="col-md-2">
+									<input type="number" class="form-control" placeholder="age" required />
+								</div>
+								
+								<label class="col-md-2 control-label">Gender</label>
+								<div class="col-md-2">
+									<select class="form-control" name="religion">
+									<option value="na" selected="">--Select Gender</option>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+									<option value="other">Other</option>
+									
+									</select>
+									
+								</div>
+							</div>
+							
+							
+							<div class="form-group row">
+							
+								<label class="col-md-2 control-label">Martial Status*</label>
+								<div class="col-md-2">
+									<select class="form-control" name="Martialstatus">
+									<option value="na" selected="">--Select Status--</option>
+									<option value="male">Single</option>
+									<option value="female">Married</option>
+									<option value="other">Other</option>
+									
+									</select>
+								</div>
+								
+								<label class="col-md-2 control-label">Spouse Name *</label>
+								<div class="col-md-2">
+									<input type="text" class="form-control" placeholder="Spouse Name" required />
+								</div>
+								
+								<label class="col-md-2 control-label">Proffesion</label>
+								<div class="col-md-2">
+									<input type="text" class="form-control" placeholder="Proffesion" required />
+									
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		<a href="postapplied.html"><div class="btn btn-info"style="width:80px">Previous</div></a>
+		<a href="language.html"<div class="btn btn-info pull-right"style="width:80px">Next</div></a>
+		</div>
+		<br><br><br>
+		<footer class="navbar navbar-default ">
+			<p class = "navbar-text pull-right">Copyright&nbsp;2018&nbsp;© International Islamic University Islamabad,pakistan</p>
+			
+		</footer>
+		
+	</body>
+</html>
